@@ -1,44 +1,42 @@
 <header>
-  
- 
-<nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
                     
                   <a class="navbar-brand" href="#">
                       <div class="row">
-                          <div class="col"><img alt="Brand" class=" img-responsivefeaturette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="<?PHP echo base_url('public/LOGO-UNAMBA.png')?>" data-holder-rendered="false" style="width: 155px; height: 39px;">
-                      
+                      <div class="col"><img alt="Brand" src="<?PHP echo base_url('public/LOGO-UNAMBA.png')?>" class="img-responsive">
                     </div>
                       </div>
                   </a>
                 </div>
             </div>
         </nav>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active menucolor">
-                <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>CPU">Inscripcion Onnile</a>
-              </li>
-              <li class="nav-item">
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url();?>inicio/login">Admicion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Local</a>
+            </li>
+             <li class="nav-item">
                 <a class="nav-link" href="<?php echo base_url();?>auth">Iniciar Sesion</a>
               </li>
-
-            </ul>
-
-          </div>
-      </div>
-    </nav>
-   <!--Menu-->
-
+          </ul>
+            <form class="form-inline mt-2 mt-md-0" action="<?php echo base_url();?>inicio/login" method="post">
+                <input class="form-control mr-sm-2" type="text" placeholder="N° de recibo" aria-label="Search" name="num_rec">
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">ingresar</button>
+          </form>
+        </div>
+      </nav>
     </header>
 <main role="main">
+    <br>
+    <br>
+   
