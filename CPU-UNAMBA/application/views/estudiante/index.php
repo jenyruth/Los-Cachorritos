@@ -1,7 +1,17 @@
-<label for="disabledTextInput">I. DATOS PERSONALES</label>
+<br>
+<br>
+<br>
+<br>
+
 <div class="container marketing">
+   
+    
+    <label for="disabledTextInput">I. DATOS PERSONALES</label>
+    
     <form>
-        <fieldset disabled>
+        
+        <fieldset >
+            <div class="alert alert-dark" role="alert">
             <div class="form-group">
                 <label for="disabledTextInput">Apellido Paterno</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
@@ -18,8 +28,8 @@
               <label for="disabledTextInput">Apellido Paterno</label>
               <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
             </div>
-
-
+            </div>
+            <div class="alert alert-dark" role="alert">    
            <!--caso datos personales-->
             <div class="form-group">
                 <label for="disabledTextImput"></label>
@@ -90,8 +100,9 @@
 
                 </nav>
             </div>
-
-        <!--caso de procedencia-->  
+            </div>
+        <!--caso de procedencia-->
+        <div class="alert alert-dark" role="alert">
             <div class="form-group">
                 <label for="disabledTextImput"></label>
                 <nav class="navbar navbar-default">
@@ -117,8 +128,10 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="disabledSelect">Departamento</label>
-                                <select id="disabledSelect" class="form-control">
-                                    <option>Disabled select</option>
+                                <select name="txtdepa" id="disabledSelect" class="form-control">
+                                    <?php foreach ($depar as $value){?>
+                                    <option value="<?php echo $value-> IdDepartamento?>"><?php echo $value->Departamento; ?></option>
+                                    <?php }?>
                                 </select>
                             </div>
                         </div>
@@ -126,16 +139,20 @@
 
                             <div class="form-group">
                                 <label for="disabledSelect">Provincia</label>
-                                <select id="disabledSelect" class="form-control">
-                                    <option>Disabled select</option>
+                                <select name="txtprov" id="disabledSelect" class="form-control">
+                                    <?php foreach ($prov as $value){?>
+                                        <option value="<?php echo $value->IdProvincia ?>"><?php echo $value->Provincia; ?></option>
+                                    <?php }?>
                                 </select>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
                                 <label for="disabledSelect">Distrito</label>
-                                <select id="disabledSelect" class="form-control">
-                                    <option>Disabled select</option>
+                                <select name="txtdist" id="disabledSelect" class="form-control">
+                                    <?php foreach ($dist as $value){?>
+                                        <option value="<?php echo $value->IdDistrito ?>"><?php echo $value->Distrito; ?></option>
+                                    <?php }?>
                                 </select>
                             </div>
                         </div>
@@ -145,10 +162,12 @@
 
                 </nav>
             </div>
+        </div>
             <hr class="featurette-divider">
-            
+           
             <label for="disabledTextInput">II. ESTUDIOS SECUNDARIOS</label>
             <!--caso datos de estudio-->
+            <div class="alert alert-dark" role="alert"> 
             <div class="form-group">
                 <label for="disabledTextImput"></label>
                 <nav class="navbar navbar-default">
@@ -209,11 +228,12 @@
 
                 </nav>
             </div>
-            
+            </div>
             <hr class="featurette-divider">
             
             <label for="disabledTextInput">III. Carrera a la que postula</label>
             <!--caso carrea-->
+            <div class="alert alert-dark" role="alert"> 
             <div class="form-group">
                 <label for="disabledTextImput"></label>
                 <nav class="navbar navbar-default">
@@ -246,10 +266,12 @@
 
                 </nav>
             </div>
-            
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </fieldset>
         
     </form>
     
 </div>
+<hr class="featurette-divider">
+<br>

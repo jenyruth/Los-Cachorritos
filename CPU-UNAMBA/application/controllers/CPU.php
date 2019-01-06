@@ -13,12 +13,8 @@ class CPU extends CI_Controller {
     {
 	$this->load->view('layouts/head');
         $this->load->view('layouts/header_1');
-        //$this->load->view('admin/estudiante'); 
-        /*$data['depar']= $this->Model_cpu->depar();
-       
-        $data['prov']= $this->Model_cpu->prov();
-        $data['dist']= $this->Model_cpu->dist();*/
-        $this->load->view("admin/estudiante");
+        
+        $this->load->view("estudiante/index");
         $this->load->view('layouts/footer');
         
     }
