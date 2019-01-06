@@ -14,7 +14,10 @@
                 <label for="disabledTextInput">Apellido Paterno</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
             </div>
-            
+            <div class="form-group">
+                <label for="disabledTextInput">Apellido Materno</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
+            </div>
         </fieldset>
             
         
