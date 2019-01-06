@@ -1,8 +1,25 @@
-<?php
+<br>
+<br>
+<br>
+<br>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<div class="container marketing">
+   
+    
+    <label for="disabledTextInput">I. DATOS PERSONALES</label>
+    <form>
+        <fieldset>
+            <div class="alert alert-dark" role="alert">
+            <div class="form-group">
+                <label for="disabledTextInput">Apellido Paterno</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
+            </div>
+            
+        </fieldset>
+            
+        
+        
+    </form>
+    
+    
+</div>
