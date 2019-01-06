@@ -17,7 +17,7 @@ class Inicio extends CI_Controller {
         $this->load->view('layouts/footer');
     }
     public function login(){
-        /*$num_rec = $this->input->post("num_rec");
+        $num_rec = $this->input->post("num_rec");
 	//$res= $this->Model_Inic->login(sha1($username));
         $res = $this->Model_Inic->login($num_rec);
         
@@ -30,7 +30,7 @@ class Inicio extends CI_Controller {
             );
             $this->session->set_userdata($data);
             redirect(base_url('cpu'));
-        }*/
+        }
         
         //$this->load->view('admin/estudiante'); 
         /*$data['depar']= $this->Model_cpu->depar();
@@ -38,7 +38,7 @@ class Inicio extends CI_Controller {
         $data['prov']= $this->Model_cpu->prov();
         $data['dist']= $this->Model_cpu->dist();*/
         
-        $this->load->view('admin/login');
+        //$this->load->view('admin/login');
         
     }
 }
