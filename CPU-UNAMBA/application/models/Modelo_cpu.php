@@ -8,4 +8,8 @@ class Modelo_cpu extends CI_Model {
         $this->load->database();
     }
     
+    public function depar() {
+        $query=$this->db->query("SELECT * FROM departamentos");
+        return $query->result();
+    }
 }
