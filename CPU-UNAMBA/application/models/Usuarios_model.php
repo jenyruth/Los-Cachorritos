@@ -25,5 +25,9 @@ class Usuarios_model extends CI_Model {
     public function getRoles(){
 		$resultados = $this->db->get("roles");
 		return $resultados->result();
+    }
+    
+    public function save($data){
+		return $this->db->insert("usuarios",$data);
 	}
 
