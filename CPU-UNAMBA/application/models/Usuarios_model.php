@@ -20,5 +20,10 @@ class Usuarios_model extends CI_Model {
 		$this->db->where("u.estado","1");
 		$resultado = $this->db->get();
 		return $resultado->row();
+    }
+    
+    public function getRoles(){
+		$resultados = $this->db->get("roles");
+		return $resultados->result();
 	}
 
