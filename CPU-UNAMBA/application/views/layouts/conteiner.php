@@ -10,19 +10,20 @@
             <img class="rounded-circle" src="public/img/logoCPU.png" alt="Generic placeholder image" width="140" height="140">
             <h2>CICLO VERANO</h2>
             <p class="text-justify">Este ciclo inicia el 10 de Enero del 2019 finalizando el 24 de Marzo.</p>
-            <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/carousel/#" role="button">View details »</a></p>
+            
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="public/img/logoCPU.png" alt="Generic placeholder image" width="140" height="140">
             <h2>CICLO OTOÑO</h2>
             <p class="text-justify">Este ciclo inicia el 7 de Mayo del 2019 finalizando el 26 de Agosto.</p>
-            <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/carousel/#" role="button">View details »</a></p>
+            
+            
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="public/img/logoCPU.png" alt="Generic placeholder image" width="140" height="140">
             <h2>CICLO INVIERNO</h2>
             <p class="text-justify">Este ciclo inicia el 15 de Setiembre del 2019 finalizando el 23 de Noviembre.</p>
-            <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/4.1/examples/carousel/#" role="button">View details »</a></p>
+            
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
