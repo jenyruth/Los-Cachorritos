@@ -66,7 +66,7 @@
                     <li class="treeview">
                     <a href="#">
                       <i class="fa fa-pie-chart"></i>
-                      <span>Charts</span>
+                      <span>Cuadro de Estadisticas</span>
                       <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                       </span>
