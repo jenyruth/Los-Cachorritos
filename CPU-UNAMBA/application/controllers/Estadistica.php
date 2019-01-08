@@ -11,9 +11,10 @@ class Estadistica extends CI_Controller {
 
     public function index()
     {
+        $this->load->view("admin/layouts/header");
+	$this->load->view("admin/layouts/aside");
 	$this->load->view('admin/pages/cuadro1');
-        
-        
+	$this->load->view("admin/layouts/footer");  
     }
     
 }
