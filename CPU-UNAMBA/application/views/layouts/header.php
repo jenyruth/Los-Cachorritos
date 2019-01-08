@@ -20,18 +20,16 @@
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php echo base_url();?>inicio/login">Admicion</a>
+              <a class="nav-link" href="<?php echo base_url();?>inicio/login">Admisión</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Local</a>
-            </li>
+            
              <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>auth">Iniciar Sesion</a>
+                <a class="nav-link" href="<?php echo base_url();?>auth">Iniciar Sesión</a>
               </li>
           </ul>
             <form class="form-inline mt-2 mt-md-0" action="<?php echo base_url();?>inicio/login" method="post">
                 <input class="form-control mr-sm-2" type="text" placeholder="N° de recibo" aria-label="Search" name="num_rec">
-            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">ingresar</button>
+            <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Ingresar</button>
           </form>
         </div>
       </nav>

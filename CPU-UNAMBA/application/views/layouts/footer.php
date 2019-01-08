@@ -1,5 +1,5 @@
 <!-- FOOTER -->
-      <footer id="footer-main bg_blak">
+      <footer id="footer-main">
   <div class="container-fluid ">
     <div class="row">
             <div class="col-4 col-sm-4 col-md-4" >

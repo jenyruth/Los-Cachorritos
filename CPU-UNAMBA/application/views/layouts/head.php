@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
-    <title>CPU-UNAMABA</title>
+    
+    <title>.:: CPU-UNAMBA ::.</title>
     <!--css-->
-        
         <link href="<?php echo base_url('public/css/bootstrap.min.css')?>" rel="stylesheet">
         <link href="<?php echo base_url('public/css/carousel.css')?>" rel="stylesheet" >
+        <link href="<?php echo base_url('public/template/public/css/estiloFooter.css')?>" rel="stylesheet">
         
         <!--js-->
       <script src="<?php echo base_url('public/js/jquery.min.js')?>"></script>
