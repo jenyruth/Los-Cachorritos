@@ -25,4 +25,8 @@ class Modelo_cpu extends CI_Model {
         $query=$this->db->query("SELECT * FROM distritos");
         return $query->result();
     }
+    public function carr() {
+        $query=$this->db->query("SELECT * FROM distritos");
+        return $query->result();
+    }
 }
