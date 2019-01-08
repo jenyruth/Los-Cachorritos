@@ -8,16 +8,14 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item carousel-item-next carousel-item-left">
-            <img class="first-slide" src="<?php echo base_url('public/img/Examen-de-Primera-Opcin-UNAMBA-2019-I-16-de-Diciembre-de-2018.png')?>" alt="First slide">
-            
-            
+            <img class="first-slide" src="<?php echo base_url('public/img/cpu.png')?>" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="<?php echo base_url('public/img/cpu_unamba03.png')?>" alt="Second slide">
             
           </div>
           <div class="carousel-item active carousel-item-left">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="<?php echo base_url('public/img/admision.jpg')?>" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#" role="button" data-slide="prev">
@@ -29,3 +27,4 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+

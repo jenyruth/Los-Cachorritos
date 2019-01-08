@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
