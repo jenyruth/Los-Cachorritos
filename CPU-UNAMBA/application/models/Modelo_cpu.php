@@ -17,4 +17,8 @@ class Modelo_cpu extends CI_Model {
         $query=$this->db->query("SELECT * from departamentos INNER JOIN provincias WHERE departamentos.IdDepartamento='$ID' AND provincias.IdDepartamento= '$ID'");
         return $query->result();
     }
+    public function dist() {
+        $query=$this->db->query("SELECT * FROM distritos");
+        return $query->result();
+    }
 }
