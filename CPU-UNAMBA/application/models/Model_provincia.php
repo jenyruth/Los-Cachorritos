@@ -20,4 +20,15 @@ class Model_provincia extends CI_Model
 
     }
 
+        //crea una sellecion de provincias en base al id de los departamentos
+
+    public function selectProvincias($id_estado = null){
+        $provincias = $this->provinciaxdepartamento($id_estado);
+        $opcion = "<option> selecione la provincia</option>";
+        foreach ($provincias ->result() as $provincia) {
+            $opcion.="<option value ='{$provincia->IdProvincia}'>$provincia->Provincia</option>".PHP_EOL;
+        }
+        return $opcion;
+    }
+
 }
