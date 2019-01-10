@@ -14,5 +14,16 @@ class Modelo_cpu extends CI_Model {
         ->order_by('Departamento')
         ->get('departamentos');
     }
-    
+       //mostrar los departamentos 
+
+    public function selectdepartamentos(){
+
+        $opcion = "<option value=''>seleccione el departamento</option>".PHP_EOL;
+        $departamentos = $this->depar();
+        foreach($departamentos -> result() as $departamento) {
+            $opcion .= "<option value ='{$departamento->IdDepartamento}'>{$departamento->Departamento}</option>".PHP_EOL;
+        }
+        return $opcion;
+
+    }
 }
