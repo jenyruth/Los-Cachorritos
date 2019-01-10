@@ -11,7 +11,7 @@ class CPU extends CI_Controller {
 
     public function index()
     {
-    $this->load->view('layouts/head');
+        $this->load->view('layouts/head');
         $this->load->view('layouts/header_1');
         
 
