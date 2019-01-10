@@ -20,9 +20,14 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Categorias</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Clientes</a></li>
-                            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Productos</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Administración</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ciencias Políticas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Eduacacion Inicial</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Agroindustrial</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Civil</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Minas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y Z.</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -45,10 +50,14 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Categorias</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Clientes</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Productos</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Ventas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Administración</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ciencias Políticas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Eduacacion Inicial</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Agroindustrial</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Civil</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Minas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
+                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y zootecnia</a></li>
                         </ul>
                     </li>
                     <li class="treeview">
@@ -72,10 +81,10 @@
                       </span>
                     </a>
                     <ul class="treeview-menu">
-                      <li><a href="<?php echo base_url('Estadistica/index')?>"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                      <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+                      <li><a href="<?php echo base_url('Estadistica/index')?>"><i class="fa fa-circle-o"></i> Número de postulantes</a></li>
+                      <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
                       <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                      <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+                      <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
                     </ul>
                   </li>
                 </ul>
