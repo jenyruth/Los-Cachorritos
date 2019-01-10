@@ -13,7 +13,7 @@ class Estadistica extends CI_Controller {
     {
         $this->load->view("admin/layouts/header");
 	$this->load->view("admin/layouts/aside");
-	$this->load->view('admin/pages/cuadro1');
+	$this->load->view('admin/pages/cuadro2');
 	$this->load->view("admin/layouts/footer");  
     }
     
