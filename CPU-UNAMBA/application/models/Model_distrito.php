@@ -19,5 +19,15 @@ class Model_distrito extends CI_Model
 
 
     }
+    //crea una sellecion de provincias en base al id de los departamentos
+
+    public function selectDistritos($id_provincia = null){
+        $distritos = $this->distritoxprovincia($id_provincia);
+        $opcion = "<option> selecione el distrito</option>";
+        foreach ($distritos ->result() as $distrito) {
+            $opcion.="<option value ='{$distrito->IdDistrito}'>$distrito->Distrito</option>".PHP_EOL;
+        }
+        return $opcion;
+    }
 
 }
