@@ -6,7 +6,7 @@ class Estadistica extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('Model_cpu');
+        $this->load->model("Model_carrera");
     }
 
     public function index()
@@ -17,11 +17,12 @@ class Estadistica extends CI_Controller {
         $this->load->view("admin/layouts/footer");  
     }
 
-        public function listarSistemas()
+    public function listarSistemas()
     {
+        $data['entradas'] = $this->Model_carrera->listarSistemas();
         $this->load->view("admin/layouts/header");
         $this->load->view("admin/layouts/aside");
-        $this->load->view('admin/mantenimiento/tabla_sistemas');
+        $this->load->view('admin/mantenimiento/tabla_sistemas',$data);
         $this->load->view("admin/layouts/footer");  
     }
 
