@@ -20,6 +20,7 @@ class Inicio extends CI_Controller {
    public funtion insertarDatos(){
  		
  	}
+
     public function login(){
         $num_rec = $this->input->post("num_rec");
 	//$res= $this->Model_Inic->login(sha1($username));
