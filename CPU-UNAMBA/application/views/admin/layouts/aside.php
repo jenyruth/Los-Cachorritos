@@ -26,7 +26,7 @@
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Agroindustrial</a></li>
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Civil</a></li>
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Minas</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarSistemas');?>"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y Z.</a></li>
                         </ul>
                     </li>

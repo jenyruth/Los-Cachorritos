@@ -2,7 +2,14 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <canvas id="myChart" width="100" height="50"></canvas>
+      <h1>
+        Postulantes
+        <small>Cuadro estadistico</small>
+      </h1>
+    </section>
+
+    <section class="content-header">
+      <canvas id="myChart" width="100" height="40"></canvas>
   
       <script>
       var ctx = document.getElementById("myChart");

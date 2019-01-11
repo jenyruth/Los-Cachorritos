@@ -2,7 +2,7 @@
             <div class="pull-right hidden-xs">
                 <b>Version</b> 3.4.0
             </div>
-            <strong>Copyright &copy; 2018-2019 <a href="https://codemyn.blogspot.com/">By Johnel</a>.</strong> All rights
+            <strong>Copyright &copy; 2018-2019 <a href="https://codemyn.blogspot.com/">By Saldivare</a>.</strong> All rights
             reserved.
         </footer>
     </div>
