@@ -24,16 +24,20 @@
                 <th>Opciones</th>
               </thead>
               <tbody>
-                <?php foreach ($entradas as $entradas) { ?>
+                <?php 
+                $i=0;
+                foreach ($entradas as $entradas) { 
+                $i++;
+                ?>
                 <tr>
 
-                  <td><?php echo $entradas['idpostulante']; ?></td>
-                  <td><?php echo $entradas['dni']; ?></td>
-                  <td><?php echo $entradas['nomPost']; ?></td>
-                  <td><?php echo $entradas['apePaterno']; ?></td>
-                  <td><?php echo $entradas['apeMaterno']; ?></td>
-                  <td><?php echo $entradas['telf']; ?></td>
-                  <td><?php echo $entradas['correo']; ?></td>
+                  <td><?php echo $i; ?></td>
+                  <td><?php echo $entradas->dni; ?></td>
+                  <td><?php echo $entradas->nomPost; ?></td>
+                  <td><?php echo $entradas->apePaterno; ?></td>
+                  <td><?php echo $entradas->apeMaterno; ?></td>
+                  <td><?php echo $entradas->telf; ?></td>
+                  <td><?php echo $entradas->correo; ?></td>
 
                   <td>
                     <div class="btn-group">
