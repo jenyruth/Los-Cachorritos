@@ -1,4 +1,4 @@
-<br>
+﻿<br>
 <br>
 <!--CUERPO-->
 <div class="container p-3">
@@ -9,7 +9,7 @@
 
 
 <div class="container">
-    <form action="<?php echo base_url();?>mantenimiento/categorias/store" method="POST">
+    <form action="<?php echo base_url();?>registrarDatos" method="POST">
        <!--caso datos personales-->
        <fieldset>
                <legend>I. Datos Personales</legend>
