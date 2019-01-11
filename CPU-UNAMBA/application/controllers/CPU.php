@@ -28,7 +28,7 @@ class CPU extends CI_Controller {
         //finisehd
 
 
-        $this->load->view("admin/estudiante",$datos,$datos2);
+        $this->load->view("admin/layouts/estudiante",$datos,$datos2);
         $this->load->view('layouts/footer');
         
     }
