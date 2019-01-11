@@ -11,7 +11,7 @@ class CPU extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('layouts/head');
+    $this->load->view('layouts/head');
         $this->load->view('layouts/header_1');
         
 
@@ -20,10 +20,15 @@ class CPU extends CI_Controller {
                 'options_departamentos' => $this->Model_cpu-> selectdepartamentos()
         ];
 
+        $datos2 = [
+                'options_provincias' => $this->Model_provincia-> selectprovincias()
+        ];
+
+
         //finisehd
 
 
-        $this->load->view("admin/estudiante",$datos);
+        $this->load->view("admin/estudiante",$datos,$datos2);
         $this->load->view('layouts/footer');
         
     }
