@@ -8,7 +8,7 @@ class Model_distrito extends CI_Model
         parent::__construct();
     }
     
-    //Lista todas las provincias por id de departamento
+    //Lista todas las provincias por id de las provincias
     public function distritoxprovincia($id_provincia = null) {
        
 
@@ -19,7 +19,7 @@ class Model_distrito extends CI_Model
 
 
     }
-    //crea una sellecion de provincias en base al id de los departamentos
+    //crea una sellecion de provincias en base al id de las provincias
 
     public function selectDistritos($id_provincia = null){
         $distritos = $this->distritoxprovincia($id_provincia);

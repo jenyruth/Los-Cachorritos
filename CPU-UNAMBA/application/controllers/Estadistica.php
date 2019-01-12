@@ -35,5 +35,11 @@ class Estadistica extends CI_Controller {
         $this->load->view("admin/layouts/footer");  
     }
 
-      
+    public function getcarrera()
+    {
+        $resultado = $this->Model_carrera->postulantes();
+        echo json_encode($resultado);
+    }
+
+
 }

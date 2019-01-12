@@ -81,7 +81,7 @@
                       </span>
                     </a>
                     <ul class="treeview-menu">
-                      <li><a href="<?php echo base_url('Estadistica/postulante')?>"><i class="fa fa-circle-o"></i> Número de postulantes</a></li>
+                      <li><a href="<?php echo base_url('Estadistica')?>"><i class="fa fa-circle-o"></i> Número de postulantes</a></li>
                       <!--<li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
                       <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
                       <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>-->
