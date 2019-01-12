@@ -140,8 +140,8 @@
 
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="disabledSelect">Departamento</label>
-                                <select name="departamentos" id="departamentos" class="form-control">
+                                <label>Departamento</label>
+                                <select id="departamentos" name="departamentos" class="form-control">
                                     <?php
                                     echo $options_departamentos;
                                     ?>
@@ -151,9 +151,9 @@
                         <div class="col-md-4">
 
                             <div class="form-group">
-                                <label for="disabledSelect">Provincia</label>
-                                <select name="provincias" id="provincias" class="form-control" disabled="">
-                                    <option>Selccione.</option>
+                                <label>Provincia</label>
+                                <select  id="provincias" name="provincias" class="form-control" disabled="">
+                                    <option>Seleccione</option>
                                     <?php
                                     echo $options_provincias;
                                     ?>
@@ -163,9 +163,9 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <label for="disabledSelect">Distrito</label>
-                                <select name="distritos" id="distritos" class="form-control" disabled="">
-                                    <option>Selccione.</option>
+                                <label>Distrito</label>
+                                <select id="distritos" name="distritos" class="form-control" disabled="">
+                                    <option>Seleccione</option>
                                 </select>
                             </div>
                         </div>
@@ -174,13 +174,16 @@
                     </div>
             </div>
         </div>
-            <hr class="featurette-divider">
+
+
+            <hr class="featurette-divider bg-primary">
            
-            <label for="disabledTextInput">II. ESTUDIOS SECUNDARIOS</label>
-            <!--caso datos de estudio-->
+           <!--CASO DATOS DE ESTUDIO-->
+            <label>II. ESTUDIOS SECUNDARIOS</label>
+            
             <div class="alert alert-dark" role="alert"> 
             <div class="form-group">
-                <label for="disabledTextImput"></label>
+                
                 <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-5 col-sm-4">
