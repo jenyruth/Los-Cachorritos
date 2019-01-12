@@ -22,7 +22,7 @@
 
     <div class="row">
       <div class=" col-3 col-12">
-         <p class="text-center mt-5 mb-0"> 2018 &copy; UNAMBA. Todos los derechos reservados. </p>
+         <p class="text-center mt-5 mb-0"> 2019 &copy; UNAMBA. Todos los derechos reservados. </p>
       </div>
     </div>
    

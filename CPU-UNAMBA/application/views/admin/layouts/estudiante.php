@@ -2,11 +2,9 @@
 <br>
 <br>
     <div>
-        <h1 class="font-weight-bold text-center text-info">FICHA DE INSCRIPCION DEL POSTULANTE</h1>           
+        <h1 class="font-weight-bold text-center text-orange">FICHA DE INSCRIPCIÓN DEL POSTULANTE</h1> 
+        <hr style="color: #0056b2;" />          
     </div>
-    <hr class="featurette-divider bg-info">
-
-
 <div class="container marketing">
     <label class="font-weight-bold text-center text-info">I. DATOS PERSONALES</label>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -175,8 +173,8 @@
             </div>
         </div>
 
-
-            <hr class="featurette-divider bg-primary">
+         
+        <hr style="color: #0056b2;" />
            
            <!--CASO DATOS DE ESTUDIO-->
             <label class="font-weight-bold text-center text-info">II. ESTUDIOS SECUNDARIOS</label>
@@ -236,7 +234,7 @@
             </div>
             </div>
 
-            <hr class="featurette-divider bg-danger">
+            <hr style="color: #FFBF00;" />
             
 
             <!--CASO CARRERA PROFESIONAL-->

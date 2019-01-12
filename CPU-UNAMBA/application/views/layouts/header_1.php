@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="<?PHP echo base_url();?>inicio">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="<?PHP echo base_url();?>inicio">Inicio <span class="sr-only">(current)</span></a>
             </li>
             
         </div>

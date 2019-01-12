@@ -12,6 +12,7 @@
         <link href="<?php echo base_url('public/css/bootstrap.min.css')?>" rel="stylesheet">
         <link href="<?php echo base_url('public/css/carousel.css')?>" rel="stylesheet" >
         <link href="<?php echo base_url('public/css/bootstrap.css')?>" rel="stylesheet" >
+        
         <!--js-->
       <script src="<?php echo base_url('public/js/jquery.min.js')?>"></script>
     <style type="text/css">
