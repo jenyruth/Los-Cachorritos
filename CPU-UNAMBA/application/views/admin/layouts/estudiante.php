@@ -65,44 +65,29 @@
 
            <!--caso datos personales-->
             <div class="form-group">
-                <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-3 col-sm-3">
-                            <label for="disabledTextImput">sexo</label>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">Masculino
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">Femenino
-                                </label>
-                            </div>
+                            <label>Sexo</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="masculino" name="masculino">Masculino</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" id="femenino" name="femenino">Femenino</label>
+                                </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
-                            <label for="disabledTextImput">Documento de identidad</label>
+                            <label>Documento de identidad</label>
                             <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">DNI
-                                </label>
-                                <label>
-                                    <input type="checkbox">L.E
-                                </label>
-                                <label>
-                                    <input type="checkbox">L.M
-                                </label>
-                                <label>
-                                    <input type="checkbox">Bol
-                                </label>
-                                <label>
-                                    <input type="checkbox">Part
-                                </label>
+                                <label><input type="checkbox" id="dni" name="dni">DNI</label>
+                                <label><input type="checkbox" id="le" name="le">L.E</label>
+                                <label><input type="checkbox" id="lm" name="lm">L.M</label>
+                                <label><input type="checkbox" id="bol" name="bol" >Bol</label>
+                                <label><input type="checkbox" id="part" name="part">Part</label>
                             </div>
 
                             <div class="form-group">
-                                <label for="disabledTextInput">N° del documento</label>
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                <label>N° del documento</label>
+                                <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control">
                             </div>
                         </div>
 
@@ -130,7 +115,7 @@
                         </div>
                     </div>
 
-                </nav>
+                
             </div>
             </div>
         <!--caso de procedencia-->
