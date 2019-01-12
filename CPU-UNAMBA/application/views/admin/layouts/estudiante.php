@@ -8,7 +8,7 @@
 
 
 <div class="container marketing">
-    <label>I. DATOS PERSONALES</label>
+    <label class="font-weight-bold text-center text-info">I. DATOS PERSONALES</label>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script type="text/javascript">
                     var base_url="<?php echo base_url()?>";
@@ -179,53 +179,47 @@
             <hr class="featurette-divider bg-primary">
            
            <!--CASO DATOS DE ESTUDIO-->
-            <label>II. ESTUDIOS SECUNDARIOS</label>
+            <label class="font-weight-bold text-center text-info">II. ESTUDIOS SECUNDARIOS</label>
             
             <div class="alert alert-dark" role="alert"> 
             <div class="form-group">
-                
-                <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-5 col-sm-4">
-                            <label for="disabledTextImput">Colegio de Procedencia</label>
+                            <label class="font-weight-bold text-center text-black" >COLEGIO DE PROCEDENCIA</label>
                             <div class="checkbox">
-                                <label>
-                                    <input type="checkbox">Nacinal
-                                </label>
-                                <label>
-                                    <input type="checkbox">Privado
-                                </label>
+                                <label><input type="checkbox" id="estatal" name="estatal">Estatal</label>
+                                <label><input type="checkbox" id="privado" name="privado">Privado</label>
                             </div>
                             <div class="form-group">
-                                <label for="disabledTextInput">Nombre de la Institucin</label>
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                <label>Nombre del colegio</label>
+                                <input type="text" id="nombrecolegio" class="form-control">
                             </div>
                         </div>
                         <div class="col-xs-3 col-sm-5">
-                            <label for="disabledTextInput">Lugar de Nacimiento</label>
+                            <label class="font-weight-bold text-center text-black">LUGAR DE NACIMIENTO</label>
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="disabledSelect">Departamento</label>
-                                        <select id="disabledSelect" class="form-control">
-                                            <option>Disabled select</option>
+                                        <label>Departamento</label>
+                                        <select id="departamento" name="departamento" class="form-control">
+                                        <option>Apurimac</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
 
                                     <div class="form-group">
-                                        <label for="disabledSelect">Provincia</label>
-                                        <select id="disabledSelect" class="form-control">
-                                            <option>Disabled select</option>
+                                        <label>Provincia</label>
+                                        <select id="provincia" name="provincia" class="form-control">
+                                        <option>Abancay</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="disabledSelect">Distrito</label>
-                                        <select id="disabledSelect" class="form-control">
-                                            <option>Disabled select</option>
+                                        <label>Distrito</label>
+                                        <select id="distrito" name="distrito" class="form-control">
+                                            <option>Abancay</option>
                                         </select>
                                     </div>
                                 </div>
@@ -234,41 +228,39 @@
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-2 col-sm-2">
                             <div class="form-group">
-                                <label for="disabledSelect">año de Egreso </label>
-                                <input type="year" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                <label>Año de Egreso </label>
+                                <input type="year" id="anioEgreso" name="anioEgreso" class="form-control">
                             </div>
                         </div>
                     </div>
+            </div>
+            </div>
 
-                </nav>
-            </div>
-            </div>
-            <hr class="featurette-divider">
+            <hr class="featurette-divider bg-danger">
             
-            <label for="disabledTextInput">III. Carrera a la que postula</label>
-            <!--caso carrea-->
+
+            <!--CASO CARRERA PROFESIONAL-->
+            <label class="font-weight-bold text-center text-info">III. CARRERA A LA QUE POSTULA</label>
             <div class="alert alert-dark" role="alert"> 
             <div class="form-group">
-                <label for="disabledTextImput"></label>
-                <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-4 col-sm-12">
-                            <label for="disabledTextInput">Seleccione la Carrera a Postular</label>
+                            <label>Seleccione la Carrera a Postular</label>
                             <div class="row">
                                 <div class="col-md-5">
                                     <div class="form-group">
-                                        <label for="disabledSelect">Facultad</label>
-                                        <select id="disabledSelect" class="form-control">
-                                            <option>Disabled select</option>
+                                        <label>Facultad</label>
+                                        <select id="facultad" name="facultad" class="form-control">
+                                            <option>Ingenieria</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-5">
 
                                     <div class="form-group">
-                                        <label for="disabledSelect">Carrere</label>
-                                        <select id="disabledSelect" class="form-control">
-                                            <option>Disabled select</option>
+                                        <label>Carrera Profesional</label>
+                                        <select id="carreaProfesional" name="carreaProfesional" class="form-control">
+                                            <option>Ingenieria Civil</option>
                                         </select>
                                     </div>
                                 </div>
@@ -277,15 +269,9 @@
                         </div>
                         
                     </div>
-
-                </nav>
             </div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </fieldset>
-        
     </form>
-    
 </div>
-<hr class="featurette-divider">
-<br>
