@@ -63,7 +63,7 @@
                     </div>
             <div class="alert alert-dark" role="alert"> 
 
-           <!--caso datos personales-->
+           <!--CASO DATOS PERSONALES-->
             <div class="form-group">
                     <div class="row">
                         <div class="col-xs-3 col-sm-3">
@@ -96,52 +96,47 @@
                             <div class="row">
                                 <div class="col-md-8">
                                     <div class="form-group">
-                                        <label for="disabledSelect">Domicilio</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                        <label>Domicilio</label>
+                                        <input type="text" id="domicilio" name="domicilio"  class="form-control">
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="disabledSelect">Correo Eletronico</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                        <label">Correo Eletronico</label>
+                                        <input type="text" id="email" name="email" class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="disabledSelect">Telefono</label>
-                                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                        <label>Telefono</label>
+                                        <input type="text" id="telefono"name="telefono"  class="form-control">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+            </div>
+           </div>
 
-                
-            </div>
-            </div>
-        <!--caso de procedencia-->
+        <!--<!--CASO PROCEDENCIA-->
         <div class="alert alert-dark" role="alert">
             <div class="form-group">
-                <label for="disabledTextImput"></label>
-                <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-3 col-sm-3">
                             <div class="form-group">
-                                <label for="disabledTextInput">Edad</label>
-                                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                <label>Edad</label>
+                                <input type="text" id="edad" name="edad" class="form-control">
                             </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
                              <div class="form-group">
-                                <label for="disabledTextInput">Fecha de Nacimiento</label>
-                                <input type="date" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                                <label>Fecha de Nacimiento</label>
+                                <input type="date" id="fechaNac" name="fechaNac" class="form-control">
                             </div>
                         </div>
-                        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                        
                         <div class="clearfix visible-xs-block"></div>
                         <div class="col-xs-4 col-sm-5">
-                             <label for="disabledTextInput">Lugar de Nacimiento</label>
                             <div class="row">
-
 
                         <div class="col-md-4">
                             <div class="form-group">
@@ -177,8 +172,6 @@
                     </div>
                         </div>
                     </div>
-
-                </nav>
             </div>
         </div>
             <hr class="featurette-divider">
