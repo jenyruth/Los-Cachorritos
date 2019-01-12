@@ -9,7 +9,7 @@
 
 
 <div class="container">
-    <form action="<?php echo base_url();?>registrarDatos" method="POST">
+    <form action="<?php echo base_url();?>Funciones/insertarDatos" method="POST">
        <!--caso datos personales-->
        <fieldset>
                <legend>I. Datos Personales</legend>
