@@ -17,9 +17,9 @@ class Inicio extends CI_Controller {
         $this->load->view('layouts/footer');
     }
     
-   public funtion insertarDatos(){
+   /*public funtion insertarDatos(){
  		
- 	}
+ 	}*/
 
     public function login(){
         $num_rec = $this->input->post("num_rec");
