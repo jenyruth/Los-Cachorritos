@@ -16,10 +16,13 @@ class CPU extends CI_Controller {
         
 
         //pasando datos de los combos
+
+        // datos de distritos
         $datos = [
                 'options_departamentos' => $this->Model_cpu-> selectdepartamentos()
         ];
 
+        //datos de provincias
         $datos2 = [
                 'options_provincias' => $this->Model_provincia-> selectprovincias()
         ];
