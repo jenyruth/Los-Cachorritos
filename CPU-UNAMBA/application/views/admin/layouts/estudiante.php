@@ -1,92 +1,70 @@
 <br>
 <br>
 <br>
-<br>
+    <div>
+        <h1 class="font-weight-bold text-center text-info">FICHA DE INSCRIPCION DEL POSTULANTE</h1>           
+    </div>
+    <hr class="featurette-divider bg-info">
+
 
 <div class="container marketing">
-   
-    
-    <label for="disabledTextInput">I. DATOS PERSONALES</label>
-
-    
-
+    <label>I. DATOS PERSONALES</label>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript">
+                    var base_url="<?php echo base_url()?>";
+                    $(function(){
+                        $('#departamentos').change(function(){
+                            var id_departamento = $('#departamentos').val();
 
-    <script type="text/javascript">
-
-
-        var base_url="<?php echo base_url()?>";
-
-        $(function(){
-
-            $('#departamentos').change(function(){
-                var id_departamento = $('#departamentos').val();
-
-                $.post(base_url+'index.php/ajax/provincias/getProvincia',{
-                    id_departamento:id_departamento
-                },function(data){
-                    $('#provincias').html(data);
-                    $('#provincias').removeAttr('disabled');
-                });
-
-            });
-
-        });
+                            $.post(base_url+'index.php/ajax/provincias/getProvincia',{
+                                id_departamento:id_departamento
+                            },function(data){
+                                $('#provincias').html(data);
+                                $('#provincias').removeAttr('disabled');
+                            });
+                        });
+                    });
+                </script>
 
 
-    </script>
+                <script type="text/javascript">
+                        var base_url="<?php echo base_url()?>";
 
+                        $(function(){
+                            $('#provincias').change(function(){
+                                var id_provincia = $('#provincias').val();
+                                alert (id_provincia);
+                                $.post(base_url+'index.php/ajax/distritos/getDistrito',{
+                                    id_provincia:id_provincia
+                                },function(data){
+                                    $('#distritos').html(data);
+                                    $('#distritos').removeAttr('disabled');
+                                });
+                            });
+                        });
+                </script>
 
-<script type="text/javascript">
-
-
-        var base_url="<?php echo base_url()?>";
-
-        $(function(){
-
-            $('#provincias').change(function(){
-                var id_provincia = $('#provincias').val();
-                alert (id_provincia);
-                $.post(base_url+'index.php/ajax/distritos/getDistrito',{
-                    id_provincia:id_provincia
-                },function(data){
-                    $('#distritos').html(data);
-                    $('#distritos').removeAttr('disabled');
-                });
-
-            });
-
-        });
-
-
-    </script>
-
-
-    <form>
+      <!--FORMULARIO -->
+    <form action="<?php echo base_url();?>registrarDatos" method="POST">
         
-        <fieldset >
+        <fieldset>
             <div class="alert alert-dark" role="alert">
-            <div class="form-group">
-                <label for="disabledTextInput">Apellido Paterno</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
-            </div>
-            <div class="form-group">
-                <label for="disabledTextInput">Apellido Materno</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese apellido">
-            </div>
-            <div class="form-group">
-                <label for="disabledTextInput">Nombre</label>
-                <input type="text" id="disabledTextInput" class="form-control" placeholder="ingrese nombre">
-            </div>
-            <div class="form-group">
-              <label for="disabledTextInput">Apellido Paterno</label>
-              <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
-            </div>
-            </div>
-            <div class="alert alert-dark" role="alert">    
+                    <div class="form-group">
+                        <label>Apellido Paterno</label>
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Apellido Materno</label>
+                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control">
+                    </div>
+            <div class="alert alert-dark" role="alert"> 
+
            <!--caso datos personales-->
             <div class="form-group">
-                <label for="disabledTextImput"></label>
                 <nav class="navbar navbar-default">
                     <div class="row">
                         <div class="col-xs-3 col-sm-3">
