@@ -7,15 +7,34 @@
         <small>Cuadro estadistico</small>
       </h1>
     </section>
-
     <section class="content-header">
       <canvas id="myChart" width="100" height="40"></canvas>
-  
+
       <script>
       var carreras = ["Ing. Minas", "Ing. Civil", "Ing. Agroindustrias", "Ing. Sistemas", "Medicina Veterinaria", "Administracion", "Ciencias Políticas", "Educación Inicial"];
-      var postulantes = [12, 19, 3, 5, 2, 3, 4, 12];
+      var postulantes = [12, 19, 3, 5, 2, 3, 4, 12]; 
 
+
+/*        $(function(){
+
+            $('#carrera').change(function(){
+                var id_departamento = $('#carrera').val();
+
+                $.post("<?php echo base_url()?>",{
+                    id_departamento:id_departamento
+                },function(data){
+                    $('#provincias').html(data);
+                    $('#provincias').removeAttr('disabled');
+
+
+
+                });
+
+            });
+
+        });*/        
       
+
       var ctx = document.getElementById("myChart");
       var myChart = new Chart(ctx, {
           type: 'bar',
@@ -58,6 +77,7 @@
           }
       });
       </script>
+      }
     </section>
     <!-- /.content -->
   </div>

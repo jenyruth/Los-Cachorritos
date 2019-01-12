@@ -26,5 +26,14 @@ class Estadistica extends CI_Controller {
         $this->load->view("admin/layouts/footer");  
     }
 
-    
+    public function postulante()
+    {
+        $data['entradas'] = $this->Model_carrera->postulantes();
+        $this->load->view("admin/layouts/header");
+        $this->load->view("admin/layouts/aside");
+        $this->load->view('admin/graficos/cuadro2',$data);
+        $this->load->view("admin/layouts/footer");  
+    }
+
+      
 }

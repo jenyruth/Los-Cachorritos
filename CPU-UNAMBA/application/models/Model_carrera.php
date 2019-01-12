@@ -22,6 +22,14 @@ class Model_carrera extends CI_Model {
         return $resultado->result();
     }
 
+    public function postulantes(){
+        $this->db->select('idCarrera, nomCarrera');
+        $this->db->from('carrera');
+
+        $resultado = $this->db->get();
+        return $resultado->result();
+    }
+
 }
 
 /*select po.dni, po.nomPost, po.apePaterno, po.apeMaterno, po.telf, po.correo
