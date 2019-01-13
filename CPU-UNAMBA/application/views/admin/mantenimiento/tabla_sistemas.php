@@ -39,7 +39,7 @@
                     <td><?php echo $entradas->apeMaterno; ?></td>
                     <td><?php echo $entradas->telf; ?></td>
                     <td><?php echo $entradas->correo; ?></td>
-                    <?php $dataPostulante = $entradas->dni."*".$entradas->nomPost."*".$entradas->apePaterno."*".$entradas->apeMaterno."*".$entradas->sexo."*".$entradas->domicilio."*".$entradas->telf."*".$entradas->correo."*".$entradas->fechaNac."*".$entradas->nomCarrera;?>
+                    <?php $dataPostulante = $entradas->dni."*".$entradas->nomPost."*".$entradas->apePaterno."*".$entradas->apeMaterno."*".$entradas->sexo."*".$entradas->domicilio."*".$entradas->telf."*".$entradas->correo."*".$entradas->fechaNac."*".$entradas->nomCarrera."*".$entradas->Distrito."*".$entradas->codVoucher."*".$entradas->nomColegio;?>
 
                     <td>
                       <div class="btn-group">
@@ -72,8 +72,7 @@
           
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!--button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Salir</button-->
         </div>
       </div>
       <!-- /.modal-content -->

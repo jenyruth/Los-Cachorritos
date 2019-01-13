@@ -17,6 +17,9 @@ class Model_carrera extends CI_Model {
         //$this->db->select('');
         $this->db->from('postulante p');
         $this->db->join('carrera c','p.idCarrera = c.idCarrera');
+        $this->db->join('colegio co','p.idColegio = co.idColegio');
+        $this->db->join('voucher v','p.idVoucher = v.idVoucher');
+        $this->db->join('distritos d','p.idDistrito = d.idDistrito');
         $this->db->where("p.idCarrera","1" );
         $resultado = $this->db->get();
 
