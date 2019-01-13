@@ -35,5 +35,32 @@ class Estadistica extends CI_Controller {
         echo json_encode($resultado);
     }
 
+    public function editar($id)
+    {
+        $data = array(
+            'postulante' => $this->Model_carrera->editarpostulante($id), 
+        );
+        $this->load->view("admin/layouts/header");
+        $this->load->view("admin/layouts/aside");
+        $this->load->view('admin/mantenimiento/editar',$data);
+        $this->load->view("admin/layouts/footer"); 
+    }
+
+
+    public function prueba()
+    {
+        $this->load->view("admin/layouts/header");
+        $this->load->view("admin/layouts/aside");
+        $datos = [
+                'options_departamentos' => $this->Model_cpu-> selectdepartamentos()
+        ];
+        $datos2 = [
+                'options_provincias' => $this->Model_provincia-> selectprovincias()
+        ];
+        $this->load->view("admin/mantenimiento/editar",$datos,$datos2);
+        $this->load->view("admin/layouts/footer"); 
+        
+    }
+
 
 }

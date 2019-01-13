@@ -39,12 +39,12 @@
                     <td><?php echo $entradas->apeMaterno; ?></td>
                     <td><?php echo $entradas->telf; ?></td>
                     <td><?php echo $entradas->correo; ?></td>
-                    <?php $dataPostulante = $entradas->dni."*".$entradas->nomPost."*".$entradas->apePaterno."*".$entradas->apeMaterno."*".$entradas->sexo."*".$entradas->domicilio."*".$entradas->telf."*".$entradas->correo."*".$entradas->fechaNac."*".$entradas->nomCarrera."*".$entradas->Distrito."*".$entradas->codVoucher."*".$entradas->nomColegio;?>
+                    <?php $dataPostulante = $entradas->dni."*".$entradas->nomPost."*".$entradas->apePaterno."*".$entradas->apeMaterno."*".$entradas->sexo."*".$entradas->domicilio."*".$entradas->telf."*".$entradas->correo."*".$entradas->fechaNac."*".$entradas->nomCarrera."*".$entradas->Distrito."*".$entradas->nomColegio;?>
 
                     <td>
                       <div class="btn-group">
                         <button type="button" class="btn btn-info btn-Postulante" data-toggle="modal" data-target="#modal-default" value="<?php echo $dataPostulante?>"><span class="fa fa-eye"></span></a></button>
-                        <a href="#" class="btn btn-warning"><span class="fa fa-edit"></span></a>
+                        <a href="<?php echo base_url();?>Estadistica/editar/<?php echo $entradas->idpostulante?>" class="btn btn-warning"><span class="fa fa-edit"></span></a>
                         <a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
                       </div>
                     </td>
