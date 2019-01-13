@@ -12,44 +12,46 @@
       <div class="box box-solid">
         <div class="box-body">
           <div class="row">
-            <table class="table table-bordered btn-hover">
-              <thead>
-                <th>Nro</th>
-                <th>DNI</th>
-                <th>Nombres</th>
-                <th>Apellido Paterno</th>
-                <th>Apellido Materno</th>
-                <th>Telf.</th>
-                <th>Correo</th>
-                <th>Opciones</th>
-              </thead>
-              <tbody>
-                <?php 
-                $i=0;
-                foreach ($entradas as $entradas) { 
-                $i++;
-                ?>
-                <tr>
+            <div class="col-md-12">
+              <table id="lista" class="table table-bordered btn-hover">
+                <thead>
+                  <th>Nro</th>
+                  <th>DNI</th>
+                  <th>Nombres</th>
+                  <th>Apellido Paterno</th>
+                  <th>Apellido Materno</th>
+                  <th>Telf.</th>
+                  <th>Correo</th>
+                  <th>Opciones</th>
+                </thead>
+                <tbody>
+                  <?php 
+                  $i=0;
+                  foreach ($entradas as $entradas) { 
+                  $i++;
+                  ?>
+                  <tr>
 
-                  <td><?php echo $i; ?></td>
-                  <td><?php echo $entradas->dni; ?></td>
-                  <td><?php echo $entradas->nomPost; ?></td>
-                  <td><?php echo $entradas->apePaterno; ?></td>
-                  <td><?php echo $entradas->apeMaterno; ?></td>
-                  <td><?php echo $entradas->telf; ?></td>
-                  <td><?php echo $entradas->correo; ?></td>
+                    <td><?php echo $i; ?></td>
+                    <td><?php echo $entradas->dni; ?></td>
+                    <td><?php echo $entradas->nomPost; ?></td>
+                    <td><?php echo $entradas->apePaterno; ?></td>
+                    <td><?php echo $entradas->apeMaterno; ?></td>
+                    <td><?php echo $entradas->telf; ?></td>
+                    <td><?php echo $entradas->correo; ?></td>
 
-                  <td>
-                    <div class="btn-group">
-                      <a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
-                      <a href="#" class="btn btn-warning"><span class="fa fa-edit"></span></a>
-                      <a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
-                    </div>
-                  </td>
-                </tr>
-              <?php } ?>
-              </tbody>
-            </table>
+                    <td>
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+                        <a href="#" class="btn btn-warning"><span class="fa fa-edit"></span></a>
+                        <a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+                      </div>
+                    </td>
+                  </tr>
+                <?php } ?>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

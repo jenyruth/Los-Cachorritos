@@ -13,7 +13,9 @@
 <script src="<?php echo base_url();?>public/template/bootstrap/js/bootstrap.min.js"></script>
 <!-- SlimScroll -->
 <script src="<?php echo base_url();?>public/template/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-
+<!--DataTable-->
+<script src="<?php echo base_url();?>public/template/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url();?>public/template/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
 <!-- FastClick -->
 <script src="<?php echo base_url();?>public/template/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
@@ -22,6 +24,27 @@
 <script src="<?php echo base_url();?>public/template/dist/js/demo.js"></script>
 
 <script>
+  $(document).ready(function(){
+    $('#lista').DataTable({
+      "language":{
+        "lengthMenu": "  Mostrar _MENU_ registros por pagina",
+        "zeroRecords": "  No se encontraron resultados en el buscador",
+        "searchPlaceHolder":"  Buscar registros",
+        "info": "Mostrar registro de _PAGE_ al _END_ de un total de _TOTAL_ registros",
+        "infoEmpty": "No existe registro",
+        "infoFiltered": "(Filtado de un total de _MAX_ registros)",
+        "search":"Buscar",
+        "paginate":{
+          "first":"Primero",
+          "last":"Último",
+          "next":"Siguiente",
+          "previous":"Anterior"
+        },
+      }
+    });
+    $('.sidebar-menu').tree();
+  })
+
   $(function () {
     /* ChartJS
      * -------

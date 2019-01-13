@@ -11,6 +11,10 @@
     <script src="<?php echo base_url();?>public/js/jquery.min.js"></script>
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="<?php echo base_url();?>public/template/bootstrap/css/bootstrap.min.css">
+
+    <!--Datatables-->
+    <link rel="stylesheet" href="<?php echo base_url();?>public/template/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="<?php echo base_url();?>public/template/font-awesome/css/font-awesome.min.css">
     <!-- Theme style -->
