@@ -12,7 +12,7 @@
 
                 <script type="text/javascript">
 
-                    //rellenado combo box para el lugar del colegio
+                    //rellenado combo box para el lugar de procedencia
                     var base_url="<?php echo base_url()?>";
                     $(function(){
                         $('#departamentos').change(function(){
@@ -85,6 +85,29 @@
                 },function(data){
                     $('#distritocol').html(data);
                     $('#distritocol').removeAttr('disabled');
+                });
+
+            });
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+
+//rellenado combo box para carrera
+        var base_url="<?php echo base_url()?>";
+
+        $(function(){
+
+            $('#facultad').change(function(){
+                var facultad = $('#facultad').val();
+                $.post(base_url+'index.php/ajax/carreras/getCarreras',{
+                    facultad:facultad
+                },function(data){
+                    $('#CarreraProfesional').html(data);
+                    $('#CarreraProfesional').removeAttr('disabled');
                 });
 
             });
@@ -306,7 +329,10 @@
                                     <div class="form-group">
                                         <label>Facultad</label>
                                         <select id="facultad" name="facultad" class="form-control">
-                                            <option>Ingenieria</option>
+                                        <option>Seleccione</option>
+                                        <option>A</option>
+                                        <option>B</option>
+                                        <option>C</option>
                                         </select>
                                     </div>
                                 </div>
@@ -314,8 +340,8 @@
 
                                     <div class="form-group">
                                         <label>Carrera Profesional</label>
-                                        <select id="carreaProfesional" name="carreaProfesional" class="form-control">
-                                            <option>Ingenieria Civil</option>
+                                        <select id="CarreraProfesional" name="CarreraProfesional" class="form-control" disabled="">
+                                            <option>Seleccione</option>
                                         </select>
                                     </div>
                                 </div>
