@@ -31,10 +31,12 @@ class Model_carrera extends CI_Model {
         $this->db->select('count(*) as Numero, c.nomCarrera');
         $this->db->from('postulante p');
         $this->db->join('carrera c','p.idCarrera = c.idCarrera');
-        $this->db->where("p.idCarrera = '1'");
-
+        $this->db->group_by('p.idCarrera');
+        //$this->db->where("p.idCarrera = '1'");
         $resultado = $this->db->get();
         return $resultado->result();
+
+
     }
 
 //falta terminar

@@ -36,7 +36,7 @@
             <?php endif; ?>
 
 
-            <form action="<?php echo base_url();?>auth/login" method="post">
+            <form action="<?php echo base_url();?>Estadistica" method="post">
                 <div class="form-group has-feedback">
                     <input type="text" class="form-control" placeholder="Usuario" name="username">
                     <span class="glyphicon glyphicon-user form-control-feedback"></span>

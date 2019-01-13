@@ -8,7 +8,7 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">MENU NAVEGACION</li>
                     <li>
-                        <a href="../widgets.html">
+                        <a href="<?php echo base_url('Estadistica')?>">
                             <i class="fa fa-home"></i> <span>Inicio</span>
                         </a>
                     </li>
@@ -42,7 +42,7 @@
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Generar Factura</a></li>
                         </ul>
                     </li>
-                    <li class="treeview">
+                    <!--li class="treeview">
                         <a href="#">
                             <i class="fa fa-print"></i> <span>Reportes</span>
                             <span class="pull-right-container">
@@ -59,7 +59,7 @@
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y zootecnia</a></li>
                         </ul>
-                    </li>
+                    </li-->
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-user-circle-o"></i> <span>Administrador</span>
