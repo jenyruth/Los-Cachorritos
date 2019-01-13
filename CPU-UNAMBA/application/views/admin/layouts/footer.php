@@ -58,7 +58,7 @@
       html += "<p><strong>Correo Electronico : </strong>"+info[7]+"</p>"
       html += "<p><strong>Fecha de Nacimiento : </strong>"+info[8]+"</p>"
       html += "<p><strong>Lugar de Nacimiento : </strong>"+info[10]+"</p>"
-      html += "<hr><p><strong>Colegio de Procedencia : </strong>"+info[12]+"</p>"
+      html += "<hr><p><strong>Colegio de Procedencia : </strong>"+info[11]+"</p>"
       html += "<hr><p><strong>Carrera Profesional : </strong>"+info[9]+"</p>"
       $("#modal-default .modal-body").html(html);
     });

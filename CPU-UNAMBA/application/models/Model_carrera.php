@@ -37,6 +37,15 @@ class Model_carrera extends CI_Model {
         return $resultado->result();
     }
 
+    //editar postulante
+    public function editarpostulante($id)
+    {
+        $this->db->from('postulante');
+        $this->db->where('idpostulante','$id');
+        $resultado = $this->db->get();
+        return $resultado->row();
+    }
+
 }
 
 /*select po.dni, po.nomPost, po.apePaterno, po.apeMaterno, po.telf, po.correo
