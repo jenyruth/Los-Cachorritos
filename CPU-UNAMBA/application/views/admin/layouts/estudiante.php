@@ -42,6 +42,54 @@
                         });
                 </script>
 
+                <script type="text/javascript">
+
+
+        var base_url="<?php echo base_url()?>";
+
+        $(function(){
+
+            $('#departamentocol').change(function(){
+                var id_departamento = $('#departamentocol').val();
+
+                $.post(base_url+'index.php/ajax/provincias/getProvincia',{
+                    id_departamento:id_departamento
+                },function(data){
+                    $('#provinciacol').html(data);
+                    $('#provinciacol').removeAttr('disabled');
+                });
+
+            });
+
+        });
+
+
+    </script>
+
+
+<script type="text/javascript">
+
+
+        var base_url="<?php echo base_url()?>";
+
+        $(function(){
+
+            $('#provinciacol').change(function(){
+                var id_provincia = $('#provinciacol').val();
+                $.post(base_url+'index.php/ajax/distritos/getDistrito',{
+                    id_provincia:id_provincia
+                },function(data){
+                    $('#distritocol').html(data);
+                    $('#distritocol').removeAttr('disabled');
+                });
+
+            });
+
+        });
+
+
+    </script>
+
       <!--FORMULARIO -->
     <form action="<?php echo base_url();?>registrarDatos" method="POST">
         
@@ -199,8 +247,10 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Departamento</label>
-                                        <select id="departamento" name="departamento" class="form-control">
-                                        <option>Apurimac</option>
+                                        <select id="departamentocol" name="departamentocol" class="form-control">
+                                        <?php
+                                    echo $options_departamentos;
+                                    ?>
                                         </select>
                                     </div>
                                 </div>
@@ -208,16 +258,18 @@
 
                                     <div class="form-group">
                                         <label>Provincia</label>
-                                        <select id="provincia" name="provincia" class="form-control">
-                                        <option>Abancay</option>
+                                        <select id="provinciacol" name="provinciacol" class="form-control" disabled="">
+                                        <?php
+                                    echo $options_provincias;
+                                    ?>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Distrito</label>
-                                        <select id="distrito" name="distrito" class="form-control">
-                                            <option>Abancay</option>
+                                        <select id="distritocol" name="distritocol" class="form-control" disabled="">
+                                            <option>seleccione</option>
                                         </select>
                                     </div>
                                 </div>
