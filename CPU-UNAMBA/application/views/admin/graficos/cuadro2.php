@@ -27,7 +27,7 @@
       var postulantes = [];//[12, 19, 3, 5, 2, 3, 4, 12];
 
       $('#btnActualizar').click(function(){
-        $.post("<?php echo base_url('Estadistica/getcarrera');?>",
+        $.post("<?php echo base_url('Estadistica/numeroPostulante');?>",
           function(data){
             var obj = JSON.parse(data);
 

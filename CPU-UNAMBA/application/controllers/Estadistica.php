@@ -11,6 +11,7 @@ class Estadistica extends CI_Controller {
 
     public function index()
     {
+        //mostrar la vista graficos estadisticos
         $this->load->view("admin/layouts/header");
         $this->load->view("admin/layouts/aside");
         $this->load->view('admin/graficos/cuadro2');
@@ -19,6 +20,7 @@ class Estadistica extends CI_Controller {
 
     public function listarSistemas()
     {
+        //mostrar la lista de los postulantes de Ing Sistemas
         $data['entradas'] = $this->Model_carrera->listarSistemas();
         $this->load->view("admin/layouts/header");
         $this->load->view("admin/layouts/aside");
@@ -26,18 +28,10 @@ class Estadistica extends CI_Controller {
         $this->load->view("admin/layouts/footer");  
     }
 
-    public function postulante()
+    public function numeroPostulante()
     {
-        $data['entradas'] = $this->Model_carrera->postulantes();
-        $this->load->view("admin/layouts/header");
-        $this->load->view("admin/layouts/aside");
-        $this->load->view('admin/graficos/cuadro2',$data);
-        $this->load->view("admin/layouts/footer");  
-    }
-
-    public function getcarrera()
-    {
-        $resultado = $this->Model_carrera->po();
+        //cargar los registros (numero de postulante , carreras)
+        $resultado = $this->Model_carrera->numeroPostulante();
         echo json_encode($resultado);
     }
 

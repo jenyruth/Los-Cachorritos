@@ -39,10 +39,11 @@
                     <td><?php echo $entradas->apeMaterno; ?></td>
                     <td><?php echo $entradas->telf; ?></td>
                     <td><?php echo $entradas->correo; ?></td>
+                    <?php $dataPostulante = $entradas->dni."*".$entradas->nomPost."*".$entradas->apePaterno."*".$entradas->apeMaterno."*".$entradas->sexo."*".$entradas->domicilio."*".$entradas->telf."*".$entradas->correo."*".$entradas->fechaNac."*".$entradas->nomCarrera;?>
 
                     <td>
                       <div class="btn-group">
-                        <a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+                        <button type="button" class="btn btn-info btn-Postulante" data-toggle="modal" data-target="#modal-default" value="<?php echo $dataPostulante?>"><span class="fa fa-eye"></span></a></button>
                         <a href="#" class="btn btn-warning"><span class="fa fa-edit"></span></a>
                         <a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
                       </div>
@@ -57,3 +58,26 @@
       </div>
     </section>
   </div>
+
+  <!--Ventana Modal-->
+  <div class="modal fade" id="modal-default">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Información del postulante</h4>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->

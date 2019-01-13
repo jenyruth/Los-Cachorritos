@@ -12,25 +12,18 @@ class Model_carrera extends CI_Model {
 
     public function listarSistemas()
     {
-        $this->db->select('p.dni, p.nomPost, p.apePaterno, p.apeMaterno, p.telf, p.correo');
+        //listar los postulantes de la carrera Ing. Sistemas
+
+        //$this->db->select('');
         $this->db->from('postulante p');
         $this->db->join('carrera c','p.idCarrera = c.idCarrera');
-        
-        //$this->db->where("nomCarrera","Ingenieria de Informatica y Sistemas" );
+        $this->db->where("p.idCarrera","1" );
         $resultado = $this->db->get();
 
         return $resultado->result();
     }
 
-    public function postulantes(){
-        $this->db->select('idCarrera, nomCarrera');
-        $this->db->from('carrera');
-
-        $resultado = $this->db->get();
-        return $resultado->result();
-    }
-
-    public function po()
+    public function numeroPostulante()
     {
         $this->db->select('count(*) as Numero, c.nomCarrera');
         $this->db->from('postulante p');

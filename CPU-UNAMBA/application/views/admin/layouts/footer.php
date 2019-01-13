@@ -43,6 +43,23 @@
       }
     });
     $('.sidebar-menu').tree();
+
+    $(".btn-Postulante").on("click",function(){
+      var postulante = $(this).val();
+      //alert(postulante);
+      var info = postulante.split("*");
+      html = "<p><strong>DNI : </strong>"+info[0]+"</p>"
+      html += "<p><strong>Nombres : </strong>"+info[1]+"</p>"
+      html += "<p><strong>Apellidos : </strong>"+info[2]+" "+info[3]+"</p>"
+      html += "<p><strong>Sexo : </strong>"+info[4]+"</p>"
+      html += "<p><strong>Domicilio : </strong>"+info[5]+"</p>"
+      html += "<p><strong>Telefono : </strong>"+info[6]+"</p>"
+      html += "<p><strong>E-mail : </strong>"+info[7]+"</p>"
+      html += "<p><strong>Fecha de Nacimiento : </strong>"+info[8]+"</p>"
+      html += "<p><strong>Carrera Profesional : </strong>"+info[9]+"</p>"
+      $("#modal-default .modal-body").html(html);
+    });
+
   })
 
   $(function () {
