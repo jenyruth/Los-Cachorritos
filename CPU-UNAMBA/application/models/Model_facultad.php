@@ -8,20 +8,21 @@ class Model_facultad extends CI_Model {
         parent::__construct();
     }
     
-    //Lista todas las provincias
-    public function facul() {
+    //Lista todas las carrerasxfacultad
+    public function carrera($facultad = null) {
         return $this->db
-        ->order_by('facultad')
+        ->where("facultad",  $facultad)
+        ->Order_by('nomCarrera')
         ->get('carrera');
     }
-       //mostrar las provincias
+       //mostrar las facultades
 
-    public function selectfacultad(){
+    public function selectcarreras($facultad = null){
 
-        $opcion = "<option value=''>seleccione facultad</option>".PHP_EOL;
-        $facultades = $this->facul();
-        foreach($facultades -> result() as $facultad) {
-            $opcion .= "<option value ='{$facultad->facultad}'>{$facultad->facultad}</option>".PHP_EOL;
+        $carreras = $this->carrera($facultad);
+        $opcion = "<option> selecione la carrera </option>";
+        foreach ($carreras ->result() as $carrera) {
+            $opcion.="<option value ='{$carrera->IdCarrera}'>$carrera->nomCarrera</option>".PHP_EOL;
         }
         return $opcion;
 
