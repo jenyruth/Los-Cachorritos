@@ -18,10 +18,10 @@ class Estadistica extends CI_Controller {
         $this->load->view("admin/layouts/footer");  
     }
 
-    public function listarSistemas()
+    public function listarPostulantes($id)
     {
         //mostrar la lista de los postulantes de Ing Sistemas
-        $data['entradas'] = $this->Model_carrera->listarSistemas();
+        $data['entradas'] = $this->Model_carrera->listarPostulantes($id);
         $this->load->view("admin/layouts/header");
         $this->load->view("admin/layouts/aside");
         $this->load->view('admin/mantenimiento/tabla_sistemas',$data);

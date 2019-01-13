@@ -20,14 +20,14 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Administración</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ciencias Políticas</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Eduacacion Inicial</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Agroindustrial</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ing. Civil</a></li>
-                            <li><a href="<?php echo base_url('Estadistica/listarSistemas');?>"><i class="fa fa-circle-o"></i>Ing. Minas</a></li>
-                            <li><a href="<?php echo base_url('Estadistica/listarSistemas');?>"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
-                            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y Z.</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/2');?>"><i class="fa fa-circle-o"></i>Administración</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/2');?>"><i class="fa fa-circle-o"></i>Ciencias Políticas</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/5');?>"><i class="fa fa-circle-o"></i>Eduacacion Inicial</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/3');?>"><i class="fa fa-circle-o"></i>Ing. Agroindustrial</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/2');?>"><i class="fa fa-circle-o"></i>Ing. Civil</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/2');?>"><i class="fa fa-circle-o"></i>Ing. Minas</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/1');?>"><i class="fa fa-circle-o"></i>Ing. Sistemas</a></li>
+                            <li><a href="<?php echo base_url('Estadistica/listarPostulantes/4');?>"><i class="fa fa-circle-o"></i>Medicina Veterinaria y Z.</a></li>
                         </ul>
                     </li>
                     <li class="treeview">

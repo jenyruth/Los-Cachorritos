@@ -10,7 +10,7 @@ class Model_carrera extends CI_Model {
 
     public function index(){}
 
-    public function listarSistemas()
+    public function listarPostulantes($id)
     {
         //listar los postulantes de la carrera Ing. Sistemas
 
@@ -20,7 +20,7 @@ class Model_carrera extends CI_Model {
         $this->db->join('colegio co','p.idColegio = co.idColegio');
         $this->db->join('voucher v','p.idVoucher = v.idVoucher');
         $this->db->join('distritos d','p.idDistrito = d.idDistrito');
-        $this->db->where("p.idCarrera","1" );
+        $this->db->where("p.idCarrera","$id");
         $resultado = $this->db->get();
 
         return $resultado->result();
