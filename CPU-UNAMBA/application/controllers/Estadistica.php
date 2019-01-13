@@ -35,6 +35,10 @@ class Estadistica extends CI_Controller {
         echo json_encode($resultado);
     }
 
+
+
+
+//falta terminar
     public function editar($id)
     {
         $data = array(
@@ -47,7 +51,7 @@ class Estadistica extends CI_Controller {
     }
 
 
-    public function prueba()
+    public function editarPostulante()
     {
         $this->load->view("admin/layouts/header");
         $this->load->view("admin/layouts/aside");
@@ -59,6 +63,32 @@ class Estadistica extends CI_Controller {
         ];
         $this->load->view("admin/mantenimiento/editar",$datos,$datos2);
         $this->load->view("admin/layouts/footer"); 
+        
+    }
+
+    public function update()
+    {
+        $idpostulante = $this->input->post("idpostulante");
+        $nomPost = $this->input->post("nomPost");
+        $apePaterno = $this->input->post("apePaterno");
+        $apeMaterno = $this->input->post("apeMaterno");
+        $dni = $this->input->post("dni");
+        $telf = $this->input->post("telf");
+
+        $data = array(
+            'nomPost' => $nomPost,
+            'apePaterno' => $apePaterno,
+            'apeMaterno' => $apeMaterno,
+            'dni'=> $dni,
+            'telf'=> $telf,
+        );
+        if ($this->Model_carrera->update($idpostulante, $data)) 
+        {
+            redirect(base_url()."admin/mantenimiento/tabla_sistemas");
+        } else {
+            $this->session->set_flashdata("error","No se pudo actualizar la informacion");
+            redirect(base_url()."admin/mantenimiento/editar".$idpostulante);
+        }
         
     }
 

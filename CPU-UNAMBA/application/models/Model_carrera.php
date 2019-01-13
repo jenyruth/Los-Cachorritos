@@ -37,7 +37,7 @@ class Model_carrera extends CI_Model {
         return $resultado->result();
     }
 
-    //editar postulante
+//falta terminar
     public function editarpostulante($id)
     {
         $this->db->from('postulante');
@@ -46,8 +46,11 @@ class Model_carrera extends CI_Model {
         return $resultado->row();
     }
 
-}
+    public function update($id,$data)
+    {
+        $this->db->where('idpostulante','$id');
+        return $this->db->update('postulante',$data);
+    }
 
-/*select po.dni, po.nomPost, po.apePaterno, po.apeMaterno, po.telf, po.correo
-from postulante po inner join carrera ca on po.idCarrera = ca.idCarrera
-where nomCarrera like 'Ingenieria de Informatica y Sistemas%'*/
+
+}

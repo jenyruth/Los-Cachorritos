@@ -44,7 +44,7 @@
                     <td>
                       <div class="btn-group">
                         <button type="button" class="btn btn-info btn-Postulante" data-toggle="modal" data-target="#modal-default" value="<?php echo $dataPostulante?>"><span class="fa fa-eye"></span></a></button>
-                        <a href="<?php echo base_url();?>Estadistica/editar/<?php echo $entradas->idpostulante?>" class="btn btn-warning"><span class="fa fa-edit"></span></a>
+                        <a href="<?php echo base_url();?>Estadistica/editarPostulante/<?php echo $entradas->idpostulante?>" class="btn btn-warning"><span class="fa fa-edit"></span></a>
                         <a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
                       </div>
                     </td>
