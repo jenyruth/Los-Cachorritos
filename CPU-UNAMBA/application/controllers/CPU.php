@@ -17,7 +17,7 @@ class CPU extends CI_Controller {
 
         //pasando datos de los combos
 
-        // datos de departamentos
+        // datos de distritos
         $datos = [
                 'options_departamentos' => $this->Model_cpu-> selectdepartamentos()
         ];
@@ -27,12 +27,6 @@ class CPU extends CI_Controller {
                 'options_provincias' => $this->Model_provincia-> selectprovincias()
         ];
 
-        //datos de facultades
-        $datos3 = [
-                'options_facultades' => $this->Model_facultad-> selectfacultad()
-        ];
-
-        //finisehd
 
 
         $this->load->view("admin/layouts/estudiante",$datos,$datos2);
