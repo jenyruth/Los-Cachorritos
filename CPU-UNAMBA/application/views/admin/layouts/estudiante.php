@@ -124,15 +124,15 @@
             <div class="alert alert-dark" role="alert">
                     <div class="form-group">
                         <label>Apellido Paterno</label>
-                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control">
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control"  minlength="2" maxlength="40" required>
                     </div>
                     <div class="form-group">
                         <label>Apellido Materno</label>
-                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control">
+                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control"  minlength="2" maxlength="40" required>
                     </div>
                     <div class="form-group">
                         <label>Nombre</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control">
+                        <input type="text" id="nombre" name="nombre" class="form-control" minlength="2" maxlength="40" required>
                     </div>
             <div class="alert alert-dark" role="alert"> 
 
@@ -149,18 +149,11 @@
                                 </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
-                            <label>Documento de identidad</label>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="dni" name="dni">DNI</label>
-                                <label><input type="checkbox" id="le" name="le">L.E</label>
-                                <label><input type="checkbox" id="lm" name="lm">L.M</label>
-                                <label><input type="checkbox" id="bol" name="bol" >Bol</label>
-                                <label><input type="checkbox" id="part" name="part">Part</label>
-                            </div>
+                            <label>Documento de identidad</label>   
 
                             <div class="form-group">
                                 <label>N° del documento</label>
-                                <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control">
+                                <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control"  minlength="8" maxlength="8" required>
                             </div>
                         </div>
 
@@ -170,18 +163,18 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Domicilio</label>
-                                        <input type="text" id="domicilio" name="domicilio"  class="form-control">
+                                        <input type="text" id="domicilio" name="domicilio"  class="form-control"  minlength="2" maxlength="50" required>
                                     </div>
 
                                     <div class="form-group">
                                         <label">Correo Eletronico</label>
-                                        <input type="text" id="email" name="email" class="form-control">
+                                        <input type="text" id="email" name="email" class="form-control"  minlength="2" maxlength="50" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Telefono</label>
-                                        <input type="text" id="telefono"name="telefono"  class="form-control">
+                                        <label>Celular</label>
+                                        <input type="text" id="telefono"name="telefono"  class="form-control"  minlength="9" maxlength="9" required>
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +190,7 @@
                         <div class="col-xs-3 col-sm-3">
                             <div class="form-group">
                                 <label>Edad</label>
-                                <input type="text" id="edad" name="edad" class="form-control">
+                                <input type="text" id="edad" name="edad" class="form-control"  minlength="1" maxlength="3" required>
                             </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
@@ -307,7 +300,7 @@
                         <div class="col-xs-2 col-sm-2">
                             <div class="form-group">
                                 <label>Año de Egreso </label>
-                                <input type="year" id="anioEgreso" name="anioEgreso" class="form-control">
+                                <input type="year" id="anioEgreso" name="anioEgreso" class="form-control"  minlength="4" maxlength="4" required>
                             </div>
                         </div>
                     </div>
