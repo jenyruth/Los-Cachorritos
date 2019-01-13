@@ -8,13 +8,13 @@ class Model_facultad extends CI_Model {
         parent::__construct();
     }
     
-    //Lista todos los departamentos
+    //Lista todas las provincias
     public function facul() {
         return $this->db
         ->order_by('facultad')
         ->get('carrera');
     }
-       //mostrar los departamentos 
+       //mostrar las provincias
 
     public function selectfacultad(){
 
