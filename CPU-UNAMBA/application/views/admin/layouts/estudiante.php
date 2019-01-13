@@ -259,6 +259,7 @@
                                     <div class="form-group">
                                         <label>Provincia</label>
                                         <select id="provinciacol" name="provinciacol" class="form-control" disabled="">
+                                        <option>seleccione</option>
                                         <?php
                                     echo $options_provincias;
                                     ?>
