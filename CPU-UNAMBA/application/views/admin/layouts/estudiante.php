@@ -8,7 +8,11 @@
 <div class="container marketing">
     <label class="font-weight-bold text-center text-info">I. DATOS PERSONALES</label>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
                 <script type="text/javascript">
+
+                    //rellenado combo box para el lugar del colegio
                     var base_url="<?php echo base_url()?>";
                     $(function(){
                         $('#departamentos').change(function(){
@@ -69,7 +73,7 @@
 
 <script type="text/javascript">
 
-
+//rellenado combo box para el lugar del colegio
         var base_url="<?php echo base_url()?>";
 
         $(function(){
