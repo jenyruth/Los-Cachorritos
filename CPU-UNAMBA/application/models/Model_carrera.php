@@ -30,6 +30,17 @@ class Model_carrera extends CI_Model {
         return $resultado->result();
     }
 
+    public function po()
+    {
+        $this->db->select('count(*) as Numero, c.nomCarrera');
+        $this->db->from('postulante p');
+        $this->db->join('carrera c','p.idCarrera = c.idCarrera');
+        $this->db->where("p.idCarrera = '1'");
+
+        $resultado = $this->db->get();
+        return $resultado->result();
+    }
+
 }
 
 /*select po.dni, po.nomPost, po.apePaterno, po.apeMaterno, po.telf, po.correo

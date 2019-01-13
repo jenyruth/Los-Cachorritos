@@ -37,7 +37,7 @@ class Estadistica extends CI_Controller {
 
     public function getcarrera()
     {
-        $resultado = $this->Model_carrera->postulantes();
+        $resultado = $this->Model_carrera->po();
         echo json_encode($resultado);
     }
 

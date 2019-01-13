@@ -8,7 +8,17 @@
       </h1>
     </section>
     <section class="content-header">
-      <input type="button" id="btnActualizar" value="Actualizar">
+      <div class="box box-solid">
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-12">
+              <!--a href="#" id="btnActualizar">Actualizar</a-->
+              <input type="button" id="btnActualizar" class="btn btn-info" value="Actualizar">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <canvas id="myChart" width="100" height="40"></canvas>
 
       <script>
@@ -23,7 +33,7 @@
 
             $.each(obj, function(i,item){
               carreras.push(item.nomCarrera);
-              postulantes.push(item.idCarrera);
+              postulantes.push(item.Numero);
             });
 
             var ctx = $("#myChart");
