@@ -9,8 +9,8 @@
 
 
 <div class="container">
-    <form action="<?php echo base_url();?>registrarDatos" method="POST">
-       <!--caso datos personales-->
+    <form action="#" method="POST">
+       
        <fieldset>
                <legend>I. Datos Personales</legend>
                         <div class="form-group">
@@ -21,10 +21,7 @@
                             <label>Apellido Materno</label>
                             <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control" >
                         </div>
-                        <div class="form-group">
-                            <label>Nombres</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control">
-                        </div>
+                        
                     
                         <div class="form-group">
                                 <div class="row">
