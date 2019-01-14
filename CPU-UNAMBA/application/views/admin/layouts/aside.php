@@ -63,6 +63,7 @@
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Medicina Veterinaria y zootecnia</a></li>
                         </ul>
                     </li-->
+                    <!--
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-user-circle-o"></i> <span>Administrador</span>
@@ -75,6 +76,8 @@
                             <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Usuarios</a></li>
                         </ul>
                     </li>
+                           -->
+
                     <li class="treeview">
                     <a href="#">
                       <i class="fa fa-pie-chart"></i>
