@@ -17,7 +17,7 @@ class Estadistica extends CI_Controller {
         $this->load->view('admin/graficos/cuadro2');
         $this->load->view("admin/layouts/footer");  
     }
-
+	<!-- LISTANDO POSTULANTES-->
     public function listarPostulantes($id)
     {
         //mostrar la lista de los postulantes de Ing Sistemas
@@ -27,7 +27,7 @@ class Estadistica extends CI_Controller {
         $this->load->view('admin/mantenimiento/tabla_sistemas',$data);
         $this->load->view("admin/layouts/footer");  
     }
-
+	<!-- CARGANDO LOS REGISTROS -->
     public function numeroPostulante()
     {
         //cargar los registros (numero de postulante , carreras)
