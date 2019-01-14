@@ -118,7 +118,7 @@
     </script>
 
       <!--FORMULARIO -->
-    <form action="<?php echo base_url();?>registrarDatos" method="POST">
+    <form action="<?php echo base_url();?>Funciones/insertarDatos" method="POST">
         
         <fieldset>
             <div class="alert alert-dark" role="alert">
