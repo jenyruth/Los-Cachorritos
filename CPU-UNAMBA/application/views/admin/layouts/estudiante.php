@@ -35,7 +35,6 @@
                         $(function(){
                             $('#provincias').change(function(){
                                 var id_provincia = $('#provincias').val();
-                                alert (id_provincia);
                                 $.post(base_url+'index.php/ajax/distritos/getDistrito',{
                                     id_provincia:id_provincia
                                 },function(data){
