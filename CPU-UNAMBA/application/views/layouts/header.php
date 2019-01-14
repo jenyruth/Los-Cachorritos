@@ -6,7 +6,7 @@
                     
                   <a class="navbar-brand" href="#">
                       <div class="row">
-                      <div class="col"><img alt="Brand" src="<?PHP echo base_url('public/LOGO-UNAMBA.png')?>" class="img-responsive">
+                      <div class="col"><img alt="Brand" src="<?PHP echo base_url('public/img/LOGO-UNAMBA.png')?>" class="img-responsive">
                     </div>
                       </div>
                   </a>
