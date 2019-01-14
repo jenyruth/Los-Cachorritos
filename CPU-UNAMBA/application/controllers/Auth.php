@@ -11,7 +11,6 @@ class Auth extends CI_Controller {
 	{
 		if ($this->session->userdata("login")) {
 			redirect(base_url()."dashboard");
-                        
 		}
 		else{
 			$this->load->view("admin/login");
@@ -27,7 +26,7 @@ class Auth extends CI_Controller {
 
 		if (!$res) {
 			$this->session->set_flashdata("error","El usuario y/o contraseña son incorrectos");
-			redirect(base_url()."dashboard");
+			redirect(base_url());
 		}
 		else{
 			$data  = array(
