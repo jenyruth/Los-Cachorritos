@@ -10,28 +10,28 @@
         
         if(isset($datos)){
             
-            $txtnombre=$datos['txtNombres'];
-            $txtapellpat=$datos['txtapellpat'];
-            $txtapellmat=$datos['txtapellmat'];
-            $txtsexo=$datos['txtsexo'];
-            $txtdni=$datos['txtdni'];
-            $txtdomicilio=$datos['txtdomicilio'];
-            $txtcorreo=$datos['txtcorreo'];
-            $txtcelular=$datos['txtcelular'];
-            $txtfechanac=$datos['txtfechanac'];
-            $txtdep=$datos['txtdep'];
-            $txtprov=$datos['txtprov'];
-            $txtdistri=$datos['txtdistri'];
-            $txtcolegio=$datos['txtcolegio'];
-            $txtlugarnac=$datos['txtlugarnac'];
-            $txtdepartn=$datos['txtdepartn'];
-            $txtprovn=$datos['txtprovn'];
-            $txtdistrin=$datos['txtdistrin'];
-            $txtanoe=$datos['txtanoe'];
-            $txtfacult=$datos['txtfacult'];
-            $txtcarr=$datos['txtcarr'];
-            
-            
+            $nomPost=$datos['txtNombres'];
+            $apePaterno=$datos['txtapellpat'];
+            $apeMaterno=$datos['txtapellmat'];
+            $dni=$datos['txtsexo'];
+            $sexo=$datos['txtdni'];
+            $domicilio=$datos['txtdomicilio'];
+            $correo=$datos['txtcorreo'];
+            $telf=$datos['txtcelular'];
+            $fechaNac=$datos['txtfechanac'];
+            $idColegio=$datos['txtcolegio'];
+            //$txtprov=$datos['txtprov'];
+            $idCarrera=$datos['txtcarr'];
+            $idDistrito=$datos['txtdep'];
+            //$txtlugarnac=$datos['txtlugarnac'];
+            //$txtdepartn=$datos['txtdepartn'];
+            //$txtprovn=$datos['txtprovn'];
+            //$txtdistrin=$datos['txtdistrin'];
+            //$txtanoe=$datos['txtanoe'];
+            //$txtfacult=$datos['txtfacult'];
+           // $txtcarr=$datos['txtcarr'];
+           $this->Model_Estudiante->Estudiane($nomPost,$apePaterno,$apeMaterno,$dni,$sexo,$domicilio,$correo,$telf,$fechaNac,$idColegio,$idCarrera,$idVoucher,$idDistrito);
+           
         }
         //Aca lo que hacemos es guardar en un array los datos que se reciben por el POST, procura que el nombre de las claves de tu array sea igual al nombre de los campos de tu tabla
 	
