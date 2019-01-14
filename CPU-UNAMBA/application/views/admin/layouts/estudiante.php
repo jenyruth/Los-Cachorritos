@@ -142,10 +142,10 @@
                         <div class="col-xs-3 col-sm-3">
                             <label>Sexo</label>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" id="txtsexo" name="txtsexo">Masculino</label>
+                                    <label><input type="checkbox" id="txtsexo" name="txtsexo" value="m">Masculino</label>
                                 </div>
                                 <div class="checkbox">
-                                    <label><input type="checkbox" id="txtsexo" name="txtsexo">Femenino</label>
+                                    <label><input type="checkbox" id="txtsexo" name="txtsexo" value="f">Femenino</label>
                                 </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
