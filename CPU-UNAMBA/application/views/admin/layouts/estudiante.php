@@ -124,15 +124,15 @@
             <div class="alert alert-dark" role="alert">
                     <div class="form-group">
                         <label>Apellido Paterno</label>
-                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control"  minlength="2" maxlength="40" required>
+                        <input type="text" id="apellidoPaterno" name="apellidoPaterno" class="form-control"  minlength="2" maxlength="40" required pattern="([A-Za-z]+[ ][A-Za-z]+)|[A-Za-z]+" title="Solo Letras. Tamaño mínimo: 2. Tamaño máximo: 40">
                     </div>
                     <div class="form-group">
                         <label>Apellido Materno</label>
-                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control"  minlength="2" maxlength="40" required>
+                        <input type="text" id="apellidoMaterno" name="apellidoMaterno" class="form-control"  minlength="2" maxlength="40" required pattern="([A-Za-z]+[ ][A-Za-z]+)|[A-Za-z]+" title="Solo Letras. Tamaño mínimo: 2. Tamaño máximo: 40">
                     </div>
                     <div class="form-group">
                         <label>Nombre</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" minlength="2" maxlength="40" required>
+                        <input type="text" id="nombre" name="nombre" class="form-control" minlength="2" maxlength="40" required pattern="([A-Za-z]+[ ][A-Za-z]+)|[A-Za-z]+" title="Solo Letras. Tamaño mínimo: 2. Tamaño máximo: 40">
                     </div>
             <div class="alert alert-dark" role="alert"> 
 
@@ -153,7 +153,7 @@
 
                             <div class="form-group">
                                 <label>N° del documento</label>
-                                <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control"  minlength="8" maxlength="8" required>
+                                <input type="text" id="numeroDocumento" name="numeroDocumento" class="form-control"  minlength="8" maxlength="8" required pattern="[0-9]{8}" title="Solo Numeros y de 8 digitos">
                             </div>
                         </div>
 
@@ -163,18 +163,18 @@
                                 <div class="col-md-8">
                                     <div class="form-group">
                                         <label>Domicilio</label>
-                                        <input type="text" id="domicilio" name="domicilio"  class="form-control"  minlength="2" maxlength="50" required>
+                                        <input type="text" id="domicilio" name="domicilio"  class="form-control"  minlength="2" maxlength="50" required pattern="([A-Za-z]+[ ][0-9]+[ ][A-Za-z]+)|([A-Za-z]+[ ][.]+[ ][[A-Za-z]])" title="Solo Letras y numeros. Tamaño mínimo: 2. Tamaño máximo: 50">
                                     </div>
 
                                     <div class="form-group">
                                         <label">Correo Eletronico</label>
-                                        <input type="text" id="email" name="email" class="form-control"  minlength="2" maxlength="50" required>
+                                        <input type="text" id="email" name="email" class="form-control"  minlength="2" maxlength="100" required pattern="(([A-Za-z]|[0-9]|[_])+[@]([gmail]|[hotmail]|[unamba]|[outclock])[\.]([com]|[es]|[edu]|[pe])" title="Solo correos. ejemplo: cachorrito@gmail.com">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Celular</label>
-                                        <input type="text" id="telefono"name="telefono"  class="form-control"  minlength="9" maxlength="9" required>
+                                        <input type="text" id="telefono"name="telefono"  class="form-control"  minlength="9" maxlength="9" required pattern="[0-9]{9}" title="Solo Numeros y de 9 digitos">
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@
                         <div class="col-xs-3 col-sm-3">
                             <div class="form-group">
                                 <label>Edad</label>
-                                <input type="text" id="edad" name="edad" class="form-control"  minlength="1" maxlength="3" required>
+                                <input type="text" id="edad" name="edad" class="form-control"  minlength="2" maxlength="2" required required pattern="[0-9]{2}" title="Solo edades de 2 digitos">
                             </div>
                         </div>
                         <div class="col-xs-3 col-sm-3">
@@ -258,7 +258,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Nombre del colegio</label>
-                                <input type="text" id="nombrecolegio" class="form-control">
+                                <input type="text" id="nombrecolegio" class="form-control" minlength="2" maxlength="50" required  pattern="([0-9]|[ ]|[A-Za-z])+" title="Solo numeros y letras">
                             </div>
                         </div>
                         <div class="col-xs-3 col-sm-5">
@@ -300,7 +300,8 @@
                         <div class="col-xs-2 col-sm-2">
                             <div class="form-group">
                                 <label>Año de Egreso </label>
-                                <input type="year" id="anioEgreso" name="anioEgreso" class="form-control"  minlength="4" maxlength="4" required>
+
+                                <input type="year" id="anioEgreso" name="anioEgreso" class="form-control"  minlength="4" maxlength="4" required pattern="[0-9]{4}" title="Solo Numeros de 4 digitos">
                             </div>
                         </div>
                     </div>
