@@ -31,7 +31,7 @@
             //$txtfacult=$datos['txtfacult'];
            // $txtcarr=$datos['txtcarr'];
            $this->Model_Estudiante->Estudiane($nomPost,$apePaterno,$apeMaterno,$dni,$sexo,$domicilio,$correo,$telf,$fechaNac,$idColegio,$idCarrera,$idVoucher,$idDistrito);
-           
+           redirect('');
         }
         //Aca lo que hacemos es guardar en un array los datos que se reciben por el POST, procura que el nombre de las claves de tu array sea igual al nombre de los campos de tu tabla
 	
